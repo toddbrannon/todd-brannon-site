@@ -1,0 +1,327 @@
+<% include partials/header %>
+
+<! DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47826750-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-47826750-1');
+        </script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+ 
+        <!--  jQuery -->
+        <script type="text/javascript" src="/js/jquery.js"></script>
+
+        <!-- Active class on appropriate nav link - add bw title tag and closing head tag in the header file --> 
+        <script>
+                $(function(){
+                    $('a').each(function(){
+                        if ($(this).prop('href') == window.location.href) {
+                            $(this).addClass('current'); 
+                            $(this).parents('li').addClass('current');
+                        }
+                    });
+                });
+        </script>
+        
+    </head>
+  <body>
+
+  <div class="main">
+      <div class="left-side">
+          
+
+              <h1 class="brand">Todd Brannon</h1>
+              
+              <!-- Section for Person constructor display and action -->
+
+
+              <div class="person-code">
+                <img src="/images/JS_Greeting_Snippet.png" alt="" class="img-fluid code"/>
+              </div>
+                
+
+              
+
+              <!-- <div class="cta-container">
+                <a class="cta" href="/about">Start Here</a>
+              </div> -->
+
+              <div class="social-set">
+                  <ul class="social-list">
+                    <li class="social-item"><a href="https://www.linkedin.com/in/toddqbrannon" class="fab fa-linkedin fa-3x" target="_blank"></a></li>
+                    <li class="social-item"><a href="https://www.youtube.com/channel/UCe46QOYCVI2LV6rQsHIKXHQ" class="fab fa-youtube fa-3x" target="_blank"></a></li>
+                    <li class="social-item"><a href="https://www.medium.com/@cowtowntodd" class="fab fa-medium fa-3x" target="_blank"></a></li>
+                    <li class="social-item"><a href="https://github.com/toddbrannon" class="fab fa-github fa-3x" target="_blank"></a></li>
+                    <!-- <li class="social-item"><a href="https://soundcloud.com/todd-brannon" class="fab fa-soundcloud fa-3x" target="_blank"></a></li> -->
+                    <!-- <li class="social-item"><a href="" class="fab fa-instagram fa-3x" target="_blank"></a></li> -->
+                  </ul>
+                </div>
+              <!-- <div class="notify-demo">
+                <div class="row notify-demo">
+                  <div class="col-sm-12 text-center py-4">
+                    <button class="btn-lg btn-crud"><a href="https://trusponse-notify-demo.herokuapp.com" target="_blank">Check out this CRUD demo!</a></button>
+                  </div>
+                </div>
+              </div> -->
+      </div>
+    <section class="latest-projects">
+      <div class="container">
+        <div class="row latest-projects-top">
+            <div class="col-md-12 text-center py-2">
+              <h2>Latest Projects</h2>
+            </div>
+        </div>
+        <div class="row latest-projects-content">
+          <div class="col-md-4 text-center">
+            <h4><a href="https://www.trusponse.com" target="_blank">TruSponse Solutions</a></h4>
+            <a href="https://www.trusponse.com" target="_blank">
+              <img src="/images/trusponsedeskscreen.png" class="img-fluid developer-img">
+            </a>  
+          </div>
+          <div class="col-md-4 text-center">
+            <h4><a href="https://www.analystfactory.com" target="_blank">Analyst Factory</a></h4>
+            <a href="https://www.analystfactory.com" target="_blank">
+              <img src="/images/analystfactorydeskscreen.png" class="img-fluid developer-img">
+            </a>  
+          </div>
+          <div class="col-md-4 text-center">
+            <h4><a href="https://www.toddbrannonmusic.com" target="_blank">Todd Brannon Music</a></h4>
+            <a href="https://www.toddbrannonmusic.com" target="_blank">
+              <img src="/images/toddbrannonmusicdeskscreen.png" class="img-fluid developer-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="organizations py-3">
+      <div class="container-orgs">
+          <div class="row-orgs">
+     
+              <h2 class="worked-for text-center">Organizations I have worked for</h2>
+               
+                <div class="row row-worked-for">
+                  <div class="col-md-3 col-worked text-center"></div>
+                  <div class="col-md-2 col-worked text-center">
+                    <img src="/images/worked_for/UTSW_Logo.png" class="img-fluid logo-img">
+                  </div>
+                  <div class="col-md-2 col-worked text-center" style="margin:auto;">
+                    <img src="/images/worked_for/AutoNation_logo.png" class="img-fluid logo-img">
+                  </div>
+                  <div class="col-md-2 col-worked text-center" style="margin:auto;">
+                    <img src="/images/worked_for/HealthTrust_Logo.png" class="img-fluid logo-img">
+                  </div>
+                  <div class="col-md-3 col-worked text-center"></div>
+                </div>         
+          </div>
+          <div class="row-orgs">
+      
+              <div class="row row-worked-for">
+                <div class="col-md-3 col-worked text-center"></div>
+                <div class="col-md-2 col-worked text-center" style="margin:auto;">
+                  <img src="/images/worked_for/novation-logo.png" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-worked text-center" style="margin:auto;">
+                  <img src="/images/worked_for/bswh.png" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-2 col-worked text-center" style="margin:auto;">
+                  <img src="/images/worked_for/Splunk_logo.png" class="img-fluid logo-img">
+                </div>
+                <div class="col-md-3 col-worked text-center"></div>
+              </div>         
+        </div>
+      </div>
+    </section>
+      
+    <section class="developer py-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 text-center">
+                  <h2 class="software-developer">Software Developer</h2>
+                  
+                    <p>Web Development</p>
+                    <p>Fullstack Applications</p>
+                    <p>Database and API Development</p>
+                    <p>Mobile First Design</p>
+                  
+              </div>
+          
+          
+            <div class="col-md-6">
+              <img src="/images/mbp-ordersponse.png" class="img-fluid developer-img">
+            </div>
+          </div>
+              
+  
+      </div>
+  </section>
+
+  <section class="developer py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center">
+              <img src="/images/mbp-utsw-dash.png" class="img-fluid developer-img">  
+            </div>
+        
+        
+          <div class="col-md-6 text-center">
+            <h2 class="software-developer">Data & BI Analyst</h2>
+             
+              <p>SSMS | Excel | Access | PowerBI | Tableau</p>
+              <p>Analytics | Data Visualization</p>
+              <p>SQL Server | MySQL | PostgreSQL | MongoDB</p>
+              <p>Automation | VBA | Python</p>
+            
+          </div>
+        </div>
+            
+
+    </div>
+</section>
+
+
+<section class="testimonial" class="py-3">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12 text-center">
+              <h2 class="clients">Client Comments</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 align-self-center">
+              <div class="customer-testimonials">
+                <div class="row">
+                  <div class="col-md-6 text-center">
+                    <p>"Todd is great to work with and is very skilled. Communication was prompt and frequent and he provided excellent work product with a short turn around time. Thanks Todd!"</p>
+                    <p>"Todd is truly a pleasure to work with. His way of handling feedback is unparalleled. Todd is always on the look out for learning something new - and is always improving. His Excel skills are crazy good too."</p>    
+                  </div>
+                  <div class="col-md-6 text-center">
+                    <p>"Todd was great. He worked quickly and promptly and met all the deadlines we set. We could recommend him to others."</p>
+                    <p>"Todd was great - threw many different ideas at him and made it all work in the end."</p>
+                    <p>"Todd provided high quality and quick response for the Excel data analysis project. We will likely work with him again!"</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <p>"Todd delivered exactly what we were looking for and was a professional throughout the process. He kept an open dialogue throughout the project and was very understanding when the project presented unforeseen challenges. He brings an exceptional level of customer service to the work, above and beyond any other freelancer we've worked with."</h2>
+                  
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="producer">
+  <div class="container-producer">
+    <div class="container-producer-cover">
+  
+        <h2 class="music-producer text-center">Guitarist | Music Producer</h2>
+
+        <div class="container-sounds">
+          <div class="row row-sounds">
+            <div class="col-md-6 col-left">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800532286&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="col-md-6 col-right">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800554231&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>  
+          </div>
+          <div class="row row-sounds">
+            <div class="col-md-6 col-left">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800565622&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="col-md-6 col-right">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/801626914&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>  
+          </div>
+          <div class="row row-sounds">
+            <div class="col-md-6 col-left">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/785354374&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="col-md-6 col-right">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/724198321&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>  
+          </div>
+          <div class="row row-sounds">
+            <div class="col-md-6 col-left">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/868484893&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>
+            <div class="col-md-6 col-right">
+              <iframe width="70%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/663948989&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+            </div>  
+          </div>
+          
+        </div>
+    </div>
+  </div>
+</section>
+            <!-- <div class="row row-sounds">
+              <div class="col-sm-6 text-right">
+                <iframe width="50%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800565622&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+              </div>
+              <div class="col-sm-6 text-left">
+                <iframe width="50%" height="106" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/800582014&color=%235377ab&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+              </div>
+            </div>
+          </div>-->
+
+    <script>
+      (function(){
+        var menu = document.querySelector('ul'),
+          menulink = document.querySelector('img');
+          menulink.addEventListener('click', function(e){
+            menu.classList.toggle('active');
+            e.preventDefault();
+          });
+      })();
+    </script>
+    <script>
+        // function Person(first, last) {
+        //     this.name = {
+        //                     first: first,
+        //                     last: last
+        //                 }
+        //     this.greeting = () => {
+        //         return("Hi there! My name is " + this.name.first + " " + this.name.last + ".\n" +
+        //                 "I develop software, application, database, reporting and analytics solutions.")
+        //     }
+        // }
+        function greeting(first, last){
+            return("Hi there! My name is " + first + " " + last + ".\n" +
+                "I develop software, application, database, reporting and analytics solutions.")
+        }
+        document.getElementById("person").innerHTML = greeting('Todd', 'Brannon');
+        // function myFunction() {
+        //         return Math.PI;
+        //         }
+
+        //         document.getElementById("person").innerHTML = myFunction();
+    </script>
+
+
+
+  </body>
+</html>
+
+<% include partials/footer %>

@@ -1,0 +1,18 @@
+config/keys_dev.js
+readme.md
+.env
+
+node_modules
+npm-debug.log
+.DS_Store
+views/blogs/
+public/images/blog_img
+app-orig.js
+views/work_new_dev.ejs
+views/work-modals.ejs
+views/work copy.ejs
+views/portfolio_v1.ejs
+views/music.ejs
+views/index_old.ejs
+views/about_old.ejs
+public/js/main-orig(DNU).js

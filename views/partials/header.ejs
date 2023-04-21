@@ -1,0 +1,82 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title><%= title %></title>
+        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47826750-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-47826750-1');
+        </script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel='stylesheet' href='/stylesheets/style.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js'>       
+        <link rel="stylesheet" href="/stylesheets/lightbox.min.css">
+        <link rel="stylesheet" href="/stylesheets/app.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
+        <!-- Include font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
+        <!-- js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script src='/js/lightbox.min.js'></script>
+        <script src='/node_modules/amplitudejs/dist/amplitude.js'></script>
+        
+
+        <!--  jQuery -->
+        <script type="text/javascript" src="/js/jquery.js"></script>
+        <script src='/js/lightbox-plus-jquery.min.js'></script>
+        <!-- Active class on appropriate nav link - add bw title tag and closing head tag in the header file --> 
+        <script>
+                $(function(){
+                    $('a').each(function(){
+                        if ($(this).prop('href') == window.location.href) {
+                            $(this).addClass('current'); 
+                            $(this).parents('li').addClass('current');
+                        }
+                    });
+                });
+        </script>
+
+
+    </head>
+    <body>
+        <div class="my-header">
+        <nav class="my-navbar navbar sticky-top navbar-expand-lg navbar-light">     
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="/about">About</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="/work">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/portfolio">Apps</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>  
+                    </ul>
+                </div>
+                
+            </div>     
+                     
+        </nav>
+        </div>
+
+<!-- End of header -->      
+
+   
+    
