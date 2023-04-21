@@ -1,12 +1,16 @@
 <!-- MAIN FOOTER -->
 <footer id="main-footer" class="grid">
                 <p>Todd Brannon</p>
-                <p>Copyright &copy; 2021</p>
+                <p>Copyright &copy; <span id="currentYear"></span></p>
                 <!--<p><a href="#">Privacy Policy</a>  ||  <a href="#">Terms of Use</a></p>-->
                 <!--<p>Site by <a href="http://toddbrannon.com" target="_blank">Todd Brannon for TruSponse</a></p>-->
 
 </footer>
 
+<script>
+  let currentYear = new Date().getFullYear();
+  document.getElementById("currentYear").textContent = currentYear;
+</script>
 
 <!--<p>This is the footer!</p>-->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
