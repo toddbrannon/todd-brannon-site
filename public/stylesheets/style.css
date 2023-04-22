@@ -229,7 +229,7 @@ a:hover {
 .music-producer {
   color: #fff;
   padding-top:1.5em;
-  padding-bottom: 10vh;
+  padding-bottom: 4vh;
 }
 
 .row .sounds {
@@ -239,7 +239,7 @@ a:hover {
 }
 
 .row-sounds {
-  margin:auto;
+  margin: 0 auto;
   padding-bottom: .5em;
 }
 
@@ -1917,5 +1917,4 @@ input::placeholder {
 textarea::placeholder {
   color: rgb(156, 158, 165) !important;
 }
-
 
